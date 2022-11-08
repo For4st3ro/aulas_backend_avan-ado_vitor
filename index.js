@@ -312,3 +312,19 @@ function isAdult(age) {
 
 
 const isAdult = age => age > 18
+//pode ser tb  
+//const isAdult = x => x > 18
+
+
+// function getRandomNumber(){
+//   return Math.random()
+// }
+
+const getRandomNumber = () => Math.random()
+
+
+//document.addEventListener('click', function()){
+    // console.log('clicked')
+//}
+
+document.addEventListener('click', () => console.log('clicked')) //se ouver mais de uma instrução coloque ()
