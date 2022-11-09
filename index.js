@@ -103,7 +103,7 @@ console.log(chars)
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
-
+/*
 function sum(){
     const formData = new FormData(document.querySelector('form'))
     const n1 = formData.get('n1')
@@ -343,21 +343,31 @@ console.log(testArrow())
 //console.log(nameLength)
 
 //const nameLength = names.map( ({length}) => length)
-//console.log(nameLength)
 
-/*function out05() {    
-   function sumXand5(){
-      return varX+5
-   }
-   return sumXand5()
+//console.log(nameLength)
+let varX = 50
+function out(){
+    let varX = 35
+    function sumXand5(){
+        let varX = 10
+        return varX+5
+    }
+     return sumXand5()
 }
-console.log(out05())
+console.log(out())
+
 */
+let varX = 10
+
+    function sumXand5(){
+        return varX+5
+    }
+    export {sumXand5, varX}
 
 // Desafio A+: Fazer esquema em que um código declara uma variável (let) e uma função faz a soma do valor da variável com um valor estático (5, por exemplo) como retorno. Outro código importa o primeiro e declara uma variável com o mesmo nome e outro valor. Em seguida, chama a função do primeiro código. Qual valor será exibido?
 // Utilizar o artigo disponível no endereço https://www.horadecodar.com.br/2020/08/13/como-incluir-um-arquivo-de-javascript-em-outro/
 
-
+/*
 
 // orientação a objetos
 class Product {
@@ -418,3 +428,4 @@ const button = document.querySelector('#btn')
 
 button.addEventListener('click',()=>(texts[3].style.backgroundcolor='blue'))
 
+*/
