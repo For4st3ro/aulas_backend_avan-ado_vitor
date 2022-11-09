@@ -1,4 +1,4 @@
-/* // Overview de JavaScript
+/*// Overview de JavaScript
 
 // console
 console.log('Texto dentro de um log.')
@@ -103,7 +103,7 @@ console.log(chars)
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
-/*
+
 function sum(){
     const formData = new FormData(document.querySelector('form'))
     const n1 = formData.get('n1')
@@ -262,7 +262,7 @@ const sumArray = numArray.reduce(function(num1, num2){
 
 })
 console.log(sumArray)
-*/
+
 
 //funçaõ
 
@@ -295,23 +295,24 @@ function fora (){
 }
 () => ( (x=7) => (x=5))
 
-
+const testArrow = () => ((x=7), () =>(x+5))  ()
+console.log(testArrow())
 //outras arrow 
 //function sum (a + b){
    // return a + b
 //}
 
-const sum = (a,b) => a + b
+//const sum = (a,b) => a + b
 
-console.log(sum)
-
-
-function isAdult(age) {
-    return age > 18
-}
+//console.log(sum)
 
 
-const isAdult = age => age > 18
+//function isAdult(age) {
+  //  return age > 18
+//}
+
+
+//const isAdult = age => age > 18
 //pode ser tb  
 //const isAdult = x => x > 18
 
@@ -320,11 +321,100 @@ const isAdult = age => age > 18
 //   return Math.random()
 // }
 
-const getRandomNumber = () => Math.random()
+//const getRandomNumber = () => Math.random()
 
 
 //document.addEventListener('click', function()){
     // console.log('clicked')
 //}
 
-document.addEventListener('click', () => console.log('clicked')) //se ouver mais de uma instrução coloque ()
+//document.addEventListener('click', () => console.log('clicked')) //se ouver mais de uma instrução coloque ()
+
+
+
+//aula 08.11
+
+//const nameLength = names.map(function(value){
+  //  return value.length
+//})
+//console.log(nameLength)
+ 
+//const nameLength = names.map( value => value.length)
+//console.log(nameLength)
+
+//const nameLength = names.map( ({length}) => length)
+//console.log(nameLength)
+
+/*function out05() {    
+   function sumXand5(){
+      return varX+5
+   }
+   return sumXand5()
+}
+console.log(out05())
+*/
+
+// Desafio A+: Fazer esquema em que um código declara uma variável (let) e uma função faz a soma do valor da variável com um valor estático (5, por exemplo) como retorno. Outro código importa o primeiro e declara uma variável com o mesmo nome e outro valor. Em seguida, chama a função do primeiro código. Qual valor será exibido?
+// Utilizar o artigo disponível no endereço https://www.horadecodar.com.br/2020/08/13/como-incluir-um-arquivo-de-javascript-em-outro/
+
+
+
+// orientação a objetos
+class Product {
+    name
+    price
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+    productDetails(){
+            console.log(`O nome do produto e ${this.name} e o preço e ${this.price}.`)
+    }
+    static test(){
+        console.log('testando metodo static')
+    }
+}
+
+
+//instanciando um objeto product
+const shift = new Product('camisa azul', 24.99)
+shift.productDetails()
+const prink = new Product(`short verde`, 19.99)
+prink.productDetails()
+
+
+Product.test()
+
+//herança
+
+class Tenis extends Product{
+    constructor(name, price, size){
+        super(name, price)
+        this.size = size
+    }
+    showNumber(){
+        return `o nome do tenis e ${this.name}tamanho: ${this.size}, e custa ${this.price}.`
+    }
+
+}
+const tenis = new Tenis(` dadafa `, 149.99, 43)
+console.log(tenis.showNumber())
+
+
+
+const texts = document.querySelectorAll('.text')
+console.log(texts)
+
+texts.forEach((data) => console.log(data))
+
+texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
+
+texts[0].innerHTML = '<span>Testando uma alteração...</span>'
+
+texts[1].style.backgroundColor = 'red'
+//text[2].remove()
+
+const button = document.querySelector('#btn')
+
+button.addEventListener('click',()=>(texts[3].style.backgroundcolor='blue'))
+
