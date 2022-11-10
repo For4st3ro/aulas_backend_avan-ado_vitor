@@ -98,12 +98,12 @@ chars.pop()
 // push para inserir no fim do array; unshift para inserir no início do array 
 chars.push('B')
 console.log(chars)
- */
+
 
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
-/*
+
 function sum(){
     const formData = new FormData(document.querySelector('form'))
     const n1 = formData.get('n1')
@@ -356,7 +356,7 @@ function out(){
 }
 console.log(out())
 
-*/
+
 let varX = 10
 
     function sumXand5(){
@@ -410,7 +410,7 @@ class Tenis extends Product{
 const tenis = new Tenis(` dadafa `, 149.99, 43)
 console.log(tenis.showNumber())
 
-
+*/
 
 const texts = document.querySelectorAll('.text')
 console.log(texts)
@@ -428,4 +428,8 @@ const button = document.querySelector('#btn')
 
 button.addEventListener('click',()=>(texts[3].style.backgroundcolor='blue'))
 
-*/
+
+
+
+////////aula do dia 09-11
+
