@@ -488,7 +488,7 @@ const tenis = new Tenis(` dadafa `, 149.99, 43)
 console.log(tenis.showNumber())
 
 */
-
+ 
 const texts = document.querySelectorAll('.text')
 console.log(texts)
 
